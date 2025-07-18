@@ -1,0 +1,270 @@
+.myResumeContainer{
+    margin-top: 80px;
+    text-align: left;
+}
+
+.myResumeHeading{
+    margin-left: 40px;
+    margin-bottom: 2px;
+}
+
+.leftRuler{
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    margin-top: 14px;
+    width: 30px;
+    height: 1px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    border: none;
+}
+
+.rightRuler{
+    display: inline-block;
+    position: absolute;
+    width: calc(100% - 90px);
+    right: 0px;
+    margin-top: 14px;
+    height: 1px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    border: none;
+}
+
+.zigzagUnderline{
+    display: inline-block;
+    position: relative;
+    left: 40px;
+    stroke: #e6ff00;
+}
+
+.workExpriencesContainer{
+    margin-top: 50px;
+}
+
+.workExperienceHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.workExperienceHeading span{
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+.workExperienceHeading span span{
+    margin: 0px 8px;
+    color: black;
+    padding: 0px;
+    font-weight:500;
+}
+
+.workExperienceBody{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height:min-content;
+}
+
+.boxContainer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    width: 50%;
+}
+
+.box span{
+    color: #e6ff00;
+}
+
+.speech {
+    width: 300px;
+    background: rgba(206, 255, 210, 0.1);
+    padding: 30px;
+    border-radius: 35px;
+    position: relative;
+}
+
+.mini-text{
+    color: #e6ff00;
+}
+
+.educationContainer{
+    margin-top: 50px;
+}
+
+.educationHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.educationHeading span{
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+.educationHeading span span{
+    margin: 0px 8px;
+    color: black;
+    padding: 0px;
+    font-weight:500;
+}
+
+.workExperienceBody{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height:min-content;
+}
+
+.timeline-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: yellow;
+  z-index: 1;
+}
+
+.exp-card-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.6s ease-out;
+}
+
+.exp-card-container.left {
+  justify-content: flex-start;
+  margin-left: 8rem;
+  transform: translateX(-615px)
+}
+
+.exp-card-container.right {
+  justify-content: flex-end;
+  margin-right: 8rem;
+  margin-left: 0px;
+  padding-left: 0px;
+  transform: translateX(615px)
+}
+
+.speech-bubble {
+  max-width: 500px;
+  padding: 20px;
+  background: rgba(206, 255, 210, 0.1);
+  border-radius: 15px;
+  color: white;
+  position: relative;
+}
+
+.speech-bubble.left::after {
+  content: "";
+  position: absolute;
+  top: 70px;
+  right: -29px;
+  border: 15px solid transparent;
+  border-left-color: rgba(206, 255, 210, 0.1);
+}
+
+.speech-bubble.right::after {
+  content: "";
+  position: absolute;
+  top: 70px;
+  left: -28.8px;
+  border: 15px solid transparent;
+  border-right-color: rgba(206, 255, 210, 0.1);
+}
+
+.mini-text {
+  font-size: 0.9em;
+  color: #ccff00;
+  font-weight: 600;
+}
+
+.designation {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.little-p {
+  font-size: 0.95em;
+  line-height: 1.6em;
+}
+
+@media screen and (width < 1420px) {
+    .speech-bubble{
+        max-width: 400px;
+    }
+}
+
+@media screen and (width < 1160px) {
+    .speech-bubble{
+        max-width: 300px;
+    }
+}
+
+@media screen and (width < 920px) {
+    .speech-bubble{
+        max-width: 250px;
+    }
+}
+
+@media screen and (width < 820px) {
+    .exp-card-container.left {
+        margin-left: 7rem;
+    }
+
+    .exp-card-container.right {
+        margin-right: 7rem;
+    }
+}
+
+@media screen and (width < 790px) {
+    .speech-bubble{
+        max-width: 85%;
+    }
+    .timeline-container {
+        flex-direction: column;
+    }
+    .speech-bubble.left::after{
+        content: none;
+    }
+    .speech-bubble.right::after{
+        content: none;
+    }
+    .exp-card-container.right{
+        margin-right: 0px;
+        width: 95%;
+        justify-content: center;
+    }
+    .exp-card-container.left{
+        margin-left: 0px;
+        width: 95%;
+        justify-content: center;
+    }
+    .timeline-line{
+        display: none;
+    }
+    .timeline-container{
+        padding-top: 0px;
+    }
+}
+

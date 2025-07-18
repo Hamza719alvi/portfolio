@@ -1,0 +1,106 @@
+.myskillHeading{
+    margin-top: 80px;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.myskillHeading span{
+    border-bottom: 4px solid yellow;
+    padding-bottom: 2px;
+}
+
+.skillContainer{
+    display: grid;
+    margin-top: 50px;
+}
+
+.skills{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.skillGridItem{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gutter-row-inner-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleProgressLabel{
+    font-weight: 500;
+}
+
+.skillsCategory{
+    vertical-align: baseline;
+    transform: rotate(90deg);
+    letter-spacing: 9px;
+        font-size: 1.3rem;
+    opacity: .3;
+    text-align: center;
+}
+
+.skill-category-language{
+    margin-bottom: 60px;
+}
+
+.barTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.barTitle p {
+    margin: 0px;
+}
+
+.line-progress-bar-grid-container{
+    margin-right: 40px!important;
+    margin-left: 35px !important;
+}
+
+.lineProgressBar-container{
+    width: 75%;
+}
+
+@media screen and (width < 355px) {
+    .lineProgressBar-container{
+        width: 58%;
+    }
+}
+
+@media screen and (width < 470px) {
+    .skills{
+      align-items: start;
+    }
+
+  .circleProgress .ant-progress-text {
+    font-size: 12px !important;
+  }
+
+  .circleProgressLabel{
+    font-size: smaller;
+  }
+  
+}
+
+@media screen and (width < 768px) {
+    .codingSection{
+        margin-top: 70px;
+    }
+    .prg-lang-container{
+        margin-left: 20px;
+    }
+    .line-progress-bar-grid-container{
+        margin: 2px !important;
+        padding: 2px !important;
+    }
+}
